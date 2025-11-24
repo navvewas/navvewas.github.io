@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <tr style="padding:0px">
           <td style="padding:0px">
@@ -23,35 +23,56 @@
               <tbody>
                 <tr style="padding:0px">
                   <td style="padding:2.5%;width:63%;vertical-align:middle">
-                    <p class="name" style="text-align: center;">
+                    <p class="name" style="text-align: left;">
                       Navve Wasserman
                     </p>
+                    
                     <p>
-                      I'm a PhD student in computer science and machine learning at the 
-                      <a href="https://www.weizmann.ac.il/">Weizmann Institute of Science</a>.
-                      I work at the intersection of computer vision, large language models, and 
-                      computational neuroscience, with a focus on:
-                      brain-to-model alignment, fMRI interpretability, and retrieval-augmented generation (RAG).
+                      I'm a PhD student at the 
+                      <a href="https://www.weizmann.ac.il/">Weizmann Institute of Science</a> 
+                      in the Department of Computer Science, advised by 
+                      <a href="https://www.weizmann.ac.il/math/irani/">Michal Irani</a>.
+                      I am currently based in Boston, continuing my PhD and working on 
+                      machine-learning interpretability with a focus on brain interpretability, 
+                      in collaboration with 
+                      <a href="https://tamarott.github.io/">Tamar Rott Shaham</a> and 
+                      <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a> from MIT.
                     </p>
+                    
                     <p>
-                      Recently, I've been developing large-scale fMRI interpretability frameworks
-                      (e.g., BrainExplore / Brain-IT) and robust multimodal RAG rerankers
-                      (e.g., DocReRank and Real-MM-RAG).
+                      My research focuses on machine learning, computer vision, and computational neuroscience, 
+                      with an emphasis on multimodal models. On the image–text side, I work on tasks such as 
+                      image editing and multimodal retrieval. On the vision–brain side, 
+                      I develop models and tools for modeling, exploring, and interpreting the human visual system 
+                      from brain activity.
                     </p>
+                    
+
+                    <!-- <p>
+                      I completed my MSc in computational neuroscience and my BSc in electrical engineering at the 
+                      <a href="https://www.technion.ac.il/en/home-2/">Technion</a>, and I am an alumnus of the 
+                      <a href="https://excellence.technion.ac.il/">Technion Excellence Program</a>.
+                    </p> -->
+                    
+                    <!-- with an emphasis on multimodal models, including image–text 
+                    (e.g., image editing, multimodal RAG) and vision–brain modeling 
+                    (e.g., modeling, exploring, and interpreting the human visual system from brain activity evoked by natural images). -->
                     <p style="text-align:center">
-                      <a href="mailto:YOUR_EMAIL_HERE">Email</a> &nbsp;/&nbsp;
-                      <a href="data/NavveWasserman-CV.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="data/NavveWasserman-bio.txt">Bio</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=SCHOLAR_ID_HERE">Scholar</a> &nbsp;/&nbsp;
-                      <a href="https://twitter.com/YOUR_HANDLE">Twitter</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/navvewas">Github</a>
+                      <a href="mailto:navve.wasserman@weizmann.ac.il">Email</a> &nbsp;/&nbsp;
+                      <!-- <a href="data/NavveWasserman-CV.pdf">CV</a> &nbsp;/&nbsp; -->
+                      <!-- <a href="data/NavveWasserman-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                      <a href="https://scholar.google.com/citations?user=zP9EODAAAAAJ&hl=iwE">Scholar</a> &nbsp;/&nbsp;
+                      <!-- <a href="https://twitter.com/YOUR_HANDLE">Twitter</a> &nbsp;/&nbsp; -->
+                      <a href="https://linkedin.com/in/navve-wasserman-009060227">LinkedIn</a>
+
+                      <!-- <a href="https://github.com/navvewas">Github</a> -->
                     </p>
                   </td>
-                  <td style="padding:2.5%;width:37%;max-width:37%">
-                    <a href="images/navve.jpg">
+                  <td style="padding:2.5%;width:13%;max: width 15px;%">
+                    <a href="data/Navve_Image.JPG">
                       <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" 
                            alt="Navve Wasserman" 
-                           src="images/navve.jpg" 
+                           src="data/Navve_Image.JPG" 
                            class="hoverZoomLink">
                     </a>
                   </td>
@@ -59,7 +80,7 @@
               </tbody>
             </table>
 
-            <!-- ================== Research blurb ================== -->
+            <!-- ================== Research blurb ==================
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
@@ -77,21 +98,133 @@
                   </td>
                 </tr>
               </tbody>
-            </table>
+            </table> -->
 
             <!-- ================== Projects / Publications ================== -->
-            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <hr>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding-top:20px;padding-left:20px;width:100%;vertical-align:middle;">
+                    <p class="heading">Publications</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto; line-height:1.7;">
               <tbody>
 
-                <!-- Example 1: DocReRank -->
-                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()" bgcolor="#ffffd0">
-                  <td style="padding:16px;width:20%;vertical-align:middle">
+              <!-- Example 9: SAE -->
+              <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                <td style="padding:10px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <!-- Optional hover image layer -->
+                    <div class="two" id="docrerank_image">
+                      <img src="data/SAE.png" width="100%">
+                    </div>
+                    <img src="data/SAE.png" width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function docrerank_start() {
+                      document.getElementById('docrerank_image').style.opacity = "1";
+                    }
+                    function docrerank_stop() {
+                      document.getElementById('docrerank_image').style.opacity = "0";
+                    }
+                    docrerank_stop();
+                  </script>
+                </td>
+                <td style="padding:4px;width:80%;vertical-align:top">
+                  <a href="aaa">
+                    <span class="papertitle">BrainExplore: Large-Scale Discovery of Interpretable Visual Representations in the Human Brain                     </span>
+                  </a>
+                  <br>
+                  <strong>Navve Wasserman*</strong>,
+                  <a href="https://www.linkedin.com/in/matias-cosarinsky/?originalSubdomain=il"> Matias Cosarinsky*</a>, 
+                  <a href="https://www.linkedin.com/in/yuval-golbari-24a6b6225/?originalSubdomain=il"> Yuval Golbari</a>, 
+                  <a href="http://olivalab.mit.edu/"> Aude Oliva</a>, 
+                  <a href="https://groups.csail.mit.edu/vision/torralbalab/"> Antonio Torralba</a>, 
+                  <a href="https://tamarott.github.io/"> Tamar Rott Shaham</a>, 
+                  <a href="https://www.weizmann.ac.il/math/irani/home"> Michal Irani</a> 
+                  <br>
+                  <em>Coming Soon</em>, 2025
+                  <br>
+                  <!-- <a href="https://yuvalgol123.github.io/ImpMIA/">Project Page </a>/
+                  <a href="https://arxiv.org/abs/2510.10625">Paper </a>  -->
+                  <!-- <a href="https://huggingface.co/PerceptCLIP">Models </a> / 
+                  <a href="https://huggingface.co/spaces/PerceptCLIP/models_demo?logs=container">Demo</a> -->
+
+                  <p></p>
+                  <!-- <p>
+                    We introduce a framework for generating hard negative queries directly from single documents,
+                    enabling robust training of document-level rerankers for retrieval-augmented generation.
+                  </p> -->
+                </td>
+              </tr>
+
+
+              <!-- Example 4: BrainIT -->
+              <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                <td style="padding:10px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <!-- Optional hover image layer -->
+                    <div class="two" id="docrerank_image">
+                      <img src="data/BrainIT.png" width="100%">
+                    </div>
+                    <img src="data/BrainIT.png" width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function docrerank_start() {
+                      document.getElementById('docrerank_image').style.opacity = "1";
+                    }
+                    function docrerank_stop() {
+                      document.getElementById('docrerank_image').style.opacity = "0";
+                    }
+                    docrerank_stop();
+                  </script>
+                </td>
+                <td style="padding:4px;width:80%;vertical-align:top">
+                  <a href="https://amitzalcher.github.io/Brain-IT/">
+                    <span class="papertitle">Brain-IT: Image Reconstruction from fMRI via Brain-Interaction Transformer                      </span>
+                  </a>
+                  <br>
+                  <a href="https://www.linkedin.com/in/roman-beliy-423ab776/?originalSubdomain=il"> Roman Beliy*</a>, 
+                  <a href="https://www.linkedin.com/in/amit-zalcher-28539718a/?originalSubdomain=il"> Amit Zalcher*</a>, 
+                  <a href="https://www.linkedin.com/in/jonathan-kogman-46a833116/?originalSubdomain=il">  Jonathan Kogman</a>, 
+                  <strong>Navve Wasserman</strong>,
+                  <a href="https://www.weizmann.ac.il/math/irani/home"> Michal Irani</a> 
+                  <br>
+                  <em> arXiv </em>, 2025
+                  <br>
+                  <a href="https://amitzalcher.github.io/Brain-IT/">Project Page </a>/
+                  <a href="https://arxiv.org/abs/2510.25976">Paper </a>/
+                  <!-- <a href="https://huggingface.co/collections/ibm-research/real-mm-rag-bench">Benchmark </a> -->
+                  <!-- <a href="https://huggingface.co/datasets/ibm-research/REAL-MM-RAG_FinTabTrainSet_rephrased">Training Dataset</a> -->
+
+                  <p></p>
+                  <!-- <p>
+                    We introduce a framework for generating hard negative queries directly from single documents,
+                    enabling robust training of document-level rerankers for retrieval-augmented generation.
+                  </p> -->
+                </td>
+              </tr>
+
+
+
+                <!-- Example 8: MIA -->
+                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                  <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
                       <!-- Optional hover image layer -->
                       <div class="two" id="docrerank_image">
-                        <img src="images/docrerank_after.png" width="100%">
+                        <img src="data/MIA.png" width="100%">
                       </div>
-                      <img src="images/docrerank_before.png" width="100%">
+                      <img src="data/MIA.png" width="100%">
                     </div>
                     <script type="text/javascript">
                       function docrerank_start() {
@@ -103,103 +236,327 @@
                       docrerank_stop();
                     </script>
                   </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
+                  <td style="padding:4px;width:80%;vertical-align:top">
+                    <a href="https://yuvalgol123.github.io/ImpMIA/">
+                      <span class="papertitle">ImpMIA: Leveraging Implicit Bias for Membership Inference under Realistic Scenarios                     </span>
+                    </a>
+                    <br>
+                    <a href="https://www.linkedin.com/in/yuval-golbari-24a6b6225/?originalSubdomain=il"> Yuval Golbari*</a>, 
+                    <strong>Navve Wasserman*</strong>,
+                    <a href="https://sites.google.com/view/galvardi/home"> Gal Vardi</a>, 
+                    <a href="https://www.weizmann.ac.il/math/irani/home"> Michal Irani</a> 
+                    <br>
+                    <em>arXiv</em>, 2025
+                    <br>
+                    <a href="https://yuvalgol123.github.io/ImpMIA/">Project Page </a>/
+                    <a href="https://arxiv.org/abs/2510.10625">Paper </a> 
+                    <!-- <a href="https://huggingface.co/PerceptCLIP">Models </a> / 
+                    <a href="https://huggingface.co/spaces/PerceptCLIP/models_demo?logs=container">Demo</a> -->
+
+                    <p></p>
+                    <!-- <p>
+                      We introduce a framework for generating hard negative queries directly from single documents,
+                      enabling robust training of document-level rerankers for retrieval-augmented generation.
+                    </p> -->
+                  </td>
+                </tr>
+
+
+
+                <!-- Example 1: DocReRank -->
+                <!-- <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()" bgcolor="#ffffd0"> -->
+                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                  <td style="padding:10px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <!-- Optional hover image layer -->
+                      <div class="two" id="docrerank_image">
+                        <img src="data/docrerank.png" width="100%">
+                      </div>
+                      <img src="data/docrerank.png" width="100%">
+                    </div>
+                    <script type="text/javascript">
+                      function docrerank_start() {
+                        document.getElementById('docrerank_image').style.opacity = "1";
+                      }
+                      function docrerank_stop() {
+                        document.getElementById('docrerank_image').style.opacity = "0";
+                      }
+                      docrerank_stop();
+                    </script>
+                  </td>
+                  <td style="padding:4px;width:80%;vertical-align:top">
                     <a href="https://navvewas.github.io/DocReRank">
-                      <span class="papertitle">DocReRank: Single-Page Hard Negative Query Generation for RAG Rerankers</span>
+                      <span class="papertitle">DocReRank: Single-Page Hard Negative Query Generation for Training Multi-Modal RAG Rerankers</span>
                     </a>
                     <br>
                     <strong>Navve Wasserman</strong>, <!-- add co-authors here -->
+                    <a href="https://www.linkedin.com/in/oliver-heinimann/"> Oliver Heinimann</a>, 
+                    <a href="https://www.linkedin.com/in/yuval-golbari-24a6b6225/?originalSubdomain=il"> Yuval Golbari</a>, 
+                    <a href="https://www.linkedin.com/in/tal-zimbalist-a274bb1b8/?originalSubdomain=il"> Tal Zimbalist</a>, 
+                    <a href="https://elischwartz.github.io/"> Eli Schwartz</a>, 
+                    <a href="https://www.weizmann.ac.il/math/irani/home"> Michal Irani</a> 
+
                     <br>
                     <em>EMNLP</em>, 2025
                     <br>
-                    <a href="https://navvewas.github.io/DocReRank">project page</a>
+                    <a href="https://navvewas.github.io/DocReRank">Project Page</a>
                     /
-                    <a href="https://arxiv.org/abs/TODO">arXiv</a>
+                    <a href="https://aclanthology.org/2025.emnlp-main.436/">Paper</a>
                     <p></p>
-                    <p>
+                    <!-- <p>
                       We introduce a framework for generating hard negative queries directly from single documents,
                       enabling robust training of document-level rerankers for retrieval-augmented generation.
-                    </p>
+                    </p> -->
                   </td>
                 </tr>
 
                 <!-- Example 2: Real-MM-RAG -->
-                <tr onmouseout="realmmrag_stop()" onmouseover="realmmrag_start()">
-                  <td style="padding:16px;width:20%;vertical-align:middle">
+                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                  <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
-                      <div class="two" id="realmmrag_image">
-                        <img src="images/realmmrag_after.png" width="100%">
+                      <!-- Optional hover image layer -->
+                      <div class="two" id="docrerank_image">
+                        <img src="data/Realmmrag.png" width="100%">
                       </div>
-                      <img src="images/realmmrag_before.png" width="100%">
+                      <img src="data/Realmmrag.png" width="100%">
                     </div>
                     <script type="text/javascript">
-                      function realmmrag_start() {
-                        document.getElementById('realmmrag_image').style.opacity = "1";
+                      function docrerank_start() {
+                        document.getElementById('docrerank_image').style.opacity = "1";
                       }
-                      function realmmrag_stop() {
-                        document.getElementById('realmmrag_image').style.opacity = "0";
+                      function docrerank_stop() {
+                        document.getElementById('docrerank_image').style.opacity = "0";
                       }
-                      realmmrag_stop();
+                      docrerank_stop();
                     </script>
                   </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="PROJECT_PAGE_REALMMRAG_TODO">
-                      <span class="papertitle">Real-MM-RAG: Robust Multimodal Retrieval-Augmented Generation in the Wild</span>
+                  <td style="padding:4px;width:80%;vertical-align:top">
+                    <a href="https://navvewas.github.io/REAL-MM-RAG/">
+                      <span class="papertitle">REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark                      </span>
                     </a>
                     <br>
-                    <strong>Navve Wasserman</strong>, <!-- co-authors -->
+                    <strong>Navve Wasserman</strong>, <!-- add co-authors here -->
+                    <a href="https://www.linkedin.com/in/roi-pony-a1844170/?originalSubdomain=il">  Roi Pony</a>, 
+                    <a href="https://www.linkedin.com/in/oshri-naparstek-05580154/?originalSubdomain=il">  Oshri Naparstek </a>, 
+                    <a href="https://www.linkedin.com/in/adi-raz-goldfarb-587a2871/?originalSubdomain=il">  Adi Raz Goldfarb</a>, 
+                    <a href="https://elischwartz.github.io/"> Eli Schwartz</a>, 
+                    <a href="https://www.linkedin.com/in/udi-barzelay-7baa834/?originalSubdomain=il"> Udi Barzelay</a>, 
+                    <a href="https://www.linkedin.com/in/leonid-karlinsky/"> Leonid Karlinsky</a> 
+
                     <br>
                     <em>ACL</em>, 2025
                     <br>
-                    <a href="PROJECT_PAGE_REALMMRAG_TODO">project page</a>
-                    /
-                    <a href="https://arxiv.org/abs/TODO">arXiv</a>
+                    <a href="https://navvewas.github.io/REAL-MM-RAG/">Project Page </a>/
+                    <a href="https://aclanthology.org/2025.acl-long.1528/">Paper </a>/
+                    <a href="https://huggingface.co/collections/ibm-research/real-mm-rag-bench">Benchmark </a>
+                    <!-- <a href="https://huggingface.co/datasets/ibm-research/REAL-MM-RAG_FinTabTrainSet_rephrased">Training Dataset</a> -->
+
                     <p></p>
-                    <p>
-                      A benchmark and pipeline for evaluating RAG systems with real-world multimodal documents:
-                      messy PDFs, images, and long-context reasoning.
-                    </p>
+                    <!-- <p>
+                      We introduce a framework for generating hard negative queries directly from single documents,
+                      enabling robust training of document-level rerankers for retrieval-augmented generation.
+                    </p> -->
                   </td>
                 </tr>
 
-                <!-- Example 3: BrainExplore / Brain-IT -->
-                <tr onmouseout="brainexplore_stop()" onmouseover="brainexplore_start()">
-                  <td style="padding:16px;width:20%;vertical-align:middle">
+                <!-- Example 7: CLIPr -->
+                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                  <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
-                      <div class="two" id="brainexplore_image">
-                        <img src="images/brainexplore_after.png" width="100%">
+                      <!-- Optional hover image layer -->
+                      <div class="two" id="docrerank_image">
+                        <img src="data/CLIP.png" width="100%">
                       </div>
-                      <img src="images/brainexplore_before.png" width="100%">
+                      <img src="data/CLIP.png" width="100%">
                     </div>
                     <script type="text/javascript">
-                      function brainexplore_start() {
-                        document.getElementById('brainexplore_image').style.opacity = "1";
+                      function docrerank_start() {
+                        document.getElementById('docrerank_image').style.opacity = "1";
                       }
-                      function brainexplore_stop() {
-                        document.getElementById('brainexplore_image').style.opacity = "0";
+                      function docrerank_stop() {
+                        document.getElementById('docrerank_image').style.opacity = "0";
                       }
-                      brainexplore_stop();
+                      docrerank_stop();
                     </script>
                   </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="PROJECT_PAGE_BRAINEXPLORE_TODO">
-                      <span class="papertitle">BrainExplore: Large-Scale fMRI Concept Discovery for Vision Models</span>
+                  <td style="padding:4px;width:80%;vertical-align:top">
+                    <a href="https://navvewas.github.io/PerceptCLIP/">
+                      <span class="papertitle">Don't Judge Before You CLIP: A Unified Approach for Perceptual Tasks                     </span>
                     </a>
                     <br>
-                    <strong>Navve Wasserman</strong>, <!-- co-authors -->
+                    <a href="https://www.linkedin.com/in/amit-zalcher-28539718a/?originalSubdomain=il"> Amit Zalcher* </a>, 
+                    <strong>Navve Wasserman*</strong>,
+                    <a href="https://www.linkedin.com/in/roman-beliy-423ab776/?originalSubdomain=il"> Roman Beliy</a>, 
+                    <a href="https://www.linkedin.com/in/oliver-heinimann/"> Oliver Heinimann</a>, 
+                    <a href="https://www.weizmann.ac.il/math/irani/home"> Michal Irani</a> 
                     <br>
-                    <em>In progress</em>
+                    <em>TMLR</em>, 2025
                     <br>
-                    <a href="PROJECT_PAGE_BRAINEXPLORE_TODO">project page</a>
-                    /
-                    <a href="https://arxiv.org/abs/TODO">arXiv</a>
+                    <a href="https://navvewas.github.io/PerceptCLIP/">Project Page </a>/
+                    <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://openreview.net/pdf?id=uvQTYi6kbu">Paper </a> /
+                    <a href="https://huggingface.co/PerceptCLIP">Models </a> / 
+                    <a href="https://huggingface.co/spaces/PerceptCLIP/models_demo?logs=container">Demo</a>
+
                     <p></p>
-                    <p>
-                      A unified pipeline that decomposes fMRI activity, retrieves visual concepts,
-                      and scores brain-model alignment across ROIs, patterns, and large concept dictionaries.
-                    </p>
+                    <!-- <p>
+                      We introduce a framework for generating hard negative queries directly from single documents,
+                      enabling robust training of document-level rerankers for retrieval-augmented generation.
+                    </p> -->
                   </td>
                 </tr>
+                
+                <!-- Example 3: Paint by Inpaint -->
+                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                  <td style="padding:10px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <!-- Optional hover image layer -->
+                      <div class="two" id="docrerank_image">
+                        <img src="data/PIPE.png" width="100%">
+                      </div>
+                      <img src="data/PIPE.png" width="100%">
+                    </div>
+                    <script type="text/javascript">
+                      function docrerank_start() {
+                        document.getElementById('docrerank_image').style.opacity = "1";
+                      }
+                      function docrerank_stop() {
+                        document.getElementById('docrerank_image').style.opacity = "0";
+                      }
+                      docrerank_stop();
+                    </script>
+                  </td>
+                  <td style="padding:4px;width:80%;vertical-align:top">
+                    <a href="https://rotsteinnoam.github.io/Paint-by-Inpaint/">
+                      <span class="papertitle">Paint by Inpaint: Learning to Add Image Objects by Removing Them First                      </span>
+                    </a>
+                    <br>
+                    <strong>Navve Wasserman*</strong>, <!-- add co-authors here -->
+                    <a href="https://rotsteinnoam.github.io/">   Noam Rotstein*</a>, 
+                    <a href="https://royg27.github.io/">  Roy Ganz </a>, 
+                    <a href="https://ron.cs.technion.ac.il/">  Ron Kimmel </a>
+
+                    <br>
+                    <em>CVPR</em>, 2025
+                    <br>
+                    <a href="https://rotsteinnoam.github.io/Paint-by-Inpaint/">Project Page </a>/
+                    <a href="https://arxiv.org/abs/2404.18212">Paper </a>/
+                    <a href="https://github.com/RotsteinNoam/Paint-by-Inpaint">Code </a> /
+                    <a href="https://huggingface.co/datasets/paint-by-inpaint/PIPE">Dataset </a> /
+                    <a href="https://www.youtube.com/watch?v=Zhj1zkrYrcY">Video </a> 
+
+                    <!-- <a href="https://huggingface.co/collections/ibm-research/real-mm-rag-bench">Demo </a> -->
+
+                    <!-- <a href="https://huggingface.co/datasets/ibm-research/REAL-MM-RAG_FinTabTrainSet_rephrased">Training Dataset</a> -->
+
+                    <p></p>
+                    <!-- <p>
+                      We introduce a framework for generating hard negative queries directly from single documents,
+                      enabling robust training of document-level rerankers for retrieval-augmented generation.
+                    </p> -->
+                  </td>
+                </tr>
+
+
+
+                <!-- Example 5:Universal Encoder -->
+                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                  <td style="padding:10px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <!-- Optional hover image layer -->
+                      <div class="two" id="docrerank_image">
+                        <img src="data/Enc.png" width="100%">
+                      </div>
+                      <img src="data/Enc.png" width="100%">
+                    </div>
+                    <script type="text/javascript">
+                      function docrerank_start() {
+                        document.getElementById('docrerank_image').style.opacity = "1";
+                      }
+                      function docrerank_stop() {
+                        document.getElementById('docrerank_image').style.opacity = "0";
+                      }
+                      docrerank_stop();
+                    </script>
+                  </td>
+                  <td style="padding:4px;width:80%;vertical-align:top">
+                    <a href="https://arxiv.org/abs/2406.12179">
+                      <span class="papertitle">The Wisdom of a Crowd of Brains: A Universal Brain Encoder                     </span>
+                    </a>
+                    <br>
+                    <a href="https://www.linkedin.com/in/roman-beliy-423ab776/?originalSubdomain=il"> Roman Beliy*</a>, 
+                    <strong>Navve Wasserman*</strong>,
+                    <a href="https://www.linkedin.com/in/amit-zalcher-28539718a/?originalSubdomain=il"> Amit Zalcher* </a>, 
+                    <a href="https://www.weizmann.ac.il/math/irani/home"> Michal Irani</a> 
+                    <br>
+                    <em>arXiv</em>, 2024
+                    <br>
+                    <!-- <a href="https://navvewas.github.io/REAL-MM-RAG/">Project Page </a>/ -->
+                    <a href="https://arxiv.org/abs/2406.12179">Paper </a>
+                    <!-- <a href="https://huggingface.co/collections/ibm-research/real-mm-rag-bench">Benchmark </a> -->
+                    <!-- <a href="https://huggingface.co/datasets/ibm-research/REAL-MM-RAG_FinTabTrainSet_rephrased">Training Dataset</a> -->
+
+                    <p></p>
+                    <!-- <p>
+                      We introduce a framework for generating hard negative queries directly from single documents,
+                      enabling robust training of document-level rerankers for retrieval-augmented generation.
+                    </p> -->
+                  </td>
+                </tr>
+
+                <!-- Example 6:B2B -->
+                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+
+                  <td style="padding:10px;width:20%;vertical-align:middle">
+                    <div class="one">
+                      <!-- Optional hover image layer -->
+                      <div class="two" id="docrerank_image">
+                        <img src="data/B2b.png" width="100%">
+                      </div>
+                      <img src="data/B2b.png" width="100%">
+                    </div>
+                    <script type="text/javascript">
+                      function docrerank_start() {
+                        document.getElementById('docrerank_image').style.opacity = "1";
+                      }
+                      function docrerank_stop() {
+                        document.getElementById('docrerank_image').style.opacity = "0";
+                      }
+                      docrerank_stop();
+                    </script>
+                  </td>
+                  <td style="padding:4px;width:80%;vertical-align:top">
+                    <a href="https://arxiv.org/abs/2404.11143">
+                      <span class="papertitle">Functional Brain-to-Brain Transformation with No Shared Data                      </span>
+                    </a>
+                    <br>
+                    <strong>Navve Wasserman</strong>,
+                    <a href="https://www.linkedin.com/in/roman-beliy-423ab776/?originalSubdomain=il"> Roman Beliy</a>, 
+                    <a href="https://roy-urbach.github.io/"> Roy Urbach</a>, 
+                    <a href="https://www.weizmann.ac.il/math/irani/home"> Michal Irani</a> 
+                    <br>
+                    <em>arXiv</em>, 2024
+                    <br>
+                    <!-- <a href="https://navvewas.github.io/REAL-MM-RAG/">Project Page </a>/ -->
+                    <a href="https://arxiv.org/abs/2404.11143">Paper </a>
+                    <!-- <a href="https://huggingface.co/collections/ibm-research/real-mm-rag-bench">Benchmark </a> -->
+                    <!-- <a href="https://huggingface.co/datasets/ibm-research/REAL-MM-RAG_FinTabTrainSet_rephrased">Training Dataset</a> -->
+
+                    <p></p>
+                    <!-- <p>
+                      We introduce a framework for generating hard negative queries directly from single documents,
+                      enabling robust training of document-level rerankers for retrieval-augmented generation.
+                    </p> -->
+                  </td>
+                </tr>
+
+
+
+
 
                 <!-- TODO: copy-paste more <tr> blocks above for additional papers/projects -->
 
@@ -212,8 +569,8 @@
                 <tr>
                   <td style="padding:0px">
                     <br>
-                    <p style="text-align:center;font-size:small;">
-                      Template based on <a href="http://jonbarron.info/">Jon Barron</a>'s website.
+                    <p style="text-align:center;font-size:0.75em">
+                      Template based on Jon Barron's website.
                     </p>
                   </td>
                 </tr>
