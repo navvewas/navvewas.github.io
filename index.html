@@ -46,15 +46,6 @@
                     </p>
                     
 
-                    <!-- <p>
-                      I completed my MSc in computational neuroscience and my BSc in electrical engineering at the 
-                      <a href="https://www.technion.ac.il/en/home-2/">Technion</a>, and I am an alumnus of the 
-                      <a href="https://excellence.technion.ac.il/">Technion Excellence Program</a>.
-                    </p> -->
-                    
-                    <!-- with an emphasis on multimodal models, including image–text 
-                    (e.g., image editing, multimodal RAG) and vision–brain modeling 
-                    (e.g., modeling, exploring, and interpreting the human visual system from brain activity evoked by natural images). -->
                     <p style="text-align:center">
                       <a href="mailto:navve.wasserman@weizmann.ac.il">Email</a> &nbsp;/&nbsp;
                       <!-- <a href="data/NavveWasserman-CV.pdf">CV</a> &nbsp;/&nbsp; -->
@@ -69,7 +60,7 @@
                   <td style="padding:2.5%;width:13%;max: width 15px;%">
                     <a href="data/Navve_Image.JPG">
                       <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" 
-                           alt="Navve Wasserman" 
+                           alt="Portrait of Navve Wasserman"
                            src="data/Navve_Image.JPG" 
                            class="hoverZoomLink">
                     </a>
@@ -78,26 +69,6 @@
               </tbody>
             </table>
 
-            <!-- ================== Research blurb ==================
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Research</h2>
-                    <p>
-                      I am interested in computer vision, deep learning, and computational neuroscience.
-                      My work spans:
-                      (i) large-scale, brain-aligned representations for images and language,
-                      (ii) retrieval-augmented generation and reranking for real-world documents, and
-                      (iii) interpretable models and evaluation for perceptual tasks 
-                      (image quality, emotion, memorability, etc.).
-                      Some projects are <span class="highlight">highlighted</span>.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table> -->
-
             <!-- ================== News ================== -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
@@ -105,10 +76,13 @@
                   <td style="padding:16px 20px 0 20px;width:100%;vertical-align:middle">
                     <p class="heading">News</p>
                     <ul style="margin:0;padding-left:20px;line-height:1.8">
-                      <li><strong>2026</strong> — Paper accepted to ICLR 2026.</li>
-                      <li><strong>2026</strong> — Paper published in <em>NeuroImage</em>.</li>
-                      <li><strong>2025</strong> — Paper accepted to EMNLP 2025.</li>
-                      <li><strong>2025</strong> — Paper accepted to ACL 2025.</li>
+                      <li><strong>August 2026</strong> — Had a great time at the three-week <strong>Brains, Minds &amp; Machines Summer School</strong>.</li>
+                      <li><strong>August 2026</strong> — Presented a poster and gave a <strong>contributed talk at CCN</strong> on our <a href="https://weizmannvision.github.io/universal-brain-encoder/"><em>Universal Brain Encoder</em></a>.</li>
+                      <li><strong>May 2026</strong> — New preprint is out! <a href="https://arxiv.org/abs/2605.29588">Brain-IT-VQA</a> explores visual question answering from brain activity (fMRI).</li>
+                      <li><strong>May 2026</strong> — New preprint is out! <a href="https://yuvalgol123.github.io/BrainTrace/">BrainTRACE</a> introduces an automated approach for testing visual representations in the human brain.</li>
+                      <li><strong>March 2026</strong> — Presented <a href="https://navvewas.github.io/BrainExplore/">BrainExplore</a> at <strong>COSYNE 2026</strong>.</li>
+                      <li><strong>February 2026</strong> — <em>Functional Brain-to-Brain Transformation without Shared Stimuli</em> was <strong>published in NeuroImage</strong>.</li>
+                      <li><strong>January 2026</strong> — <a href="https://amitzalcher.github.io/Brain-IT/">Brain-IT</a> was <strong>accepted to ICLR 2026</strong>.</li>
                     </ul>
                   </td>
                 </tr>
@@ -135,7 +109,8 @@
               <tr>
                 <td style="padding:10px;width:20%;vertical-align:middle">
                   <div class="one">
-                    <video width="100%" autoplay loop muted playsinline controls
+                    <video class="paper-video" width="100%" autoplay loop muted playsinline controls
+                           poster="data/BrainTRACE-poster.png"
                            aria-label="BrainTRACE teaser video">
                       <source src="https://yuvalgol123.github.io/BrainTrace/assets/gifs.mp4" type="video/mp4">
                       Your browser does not support the video tag.
@@ -190,22 +165,22 @@
               </tr>
 
               <!-- Example 9: SAE -->
-              <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+              <tr class="publication-row">
 
                 <td style="padding:10px;width:20%;vertical-align:middle">
                   <div class="one">
                     <!-- Optional hover image layer -->
-                    <div class="two" id="docrerank_image">
-                      <img src="data/SAE.png" width="100%">
+                    <div class="two">
+                      <img src="data/SAE.png" width="100%" alt="BrainExplore visual summary">
                     </div>
-                    <img src="data/SAE.png" width="100%">
+                    <img src="data/SAE.png" width="100%" alt="BrainExplore visual summary">
                   </div>
                   <script type="text/javascript">
                     function docrerank_start() {
-                      document.getElementById('docrerank_image').style.opacity = "1";
+                      document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                     }
                     function docrerank_stop() {
-                      document.getElementById('docrerank_image').style.opacity = "0";
+                      document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                     }
                     docrerank_stop();
                   </script>
@@ -242,22 +217,22 @@
 
 
               <!-- Example 4: BrainIT -->
-              <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+              <tr class="publication-row">
 
                 <td style="padding:10px;width:20%;vertical-align:middle">
                   <div class="one">
                     <!-- Optional hover image layer -->
-                    <div class="two" id="docrerank_image">
-                      <img src="data/BrainIT.png" width="100%">
+                    <div class="two">
+                      <img src="data/BrainIT.png" width="100%" alt="Brain-IT visual summary">
                     </div>
-                    <img src="data/BrainIT.png" width="100%">
+                    <img src="data/BrainIT.png" width="100%" alt="Brain-IT visual summary">
                   </div>
                   <script type="text/javascript">
                     function docrerank_start() {
-                      document.getElementById('docrerank_image').style.opacity = "1";
+                      document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                     }
                     function docrerank_stop() {
-                      document.getElementById('docrerank_image').style.opacity = "0";
+                      document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                     }
                     docrerank_stop();
                   </script>
@@ -293,7 +268,7 @@
                 <tr>
                   <td style="padding:10px;width:20%;vertical-align:middle">
                     <a href="https://weizmannvision.github.io/universal-brain-encoder/">
-                      <img src="https://weizmannvision.github.io/universal-brain-encoder/figures/Figure_Overview_shrank7.PNG"
+                      <img src="data/UniversalEncoder.png"
                            width="100%" alt="Universal Brain Encoder overview">
                     </a>
                   </td>
@@ -317,22 +292,22 @@
                 </tr>
 
                 <!-- Example 6:B2B -->
-                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+                <tr class="publication-row">
 
                   <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
                       <!-- Optional hover image layer -->
-                      <div class="two" id="docrerank_image">
-                        <img src="data/B2B.png" width="100%">
+                      <div class="two">
+                        <img src="data/B2B.png" width="100%" alt="Brain-to-brain transformation visual summary">
                       </div>
-                      <img src="data/B2B.png" width="100%">
+                      <img src="data/B2B.png" width="100%" alt="Brain-to-brain transformation visual summary">
                     </div>
                     <script type="text/javascript">
                       function docrerank_start() {
-                        document.getElementById('docrerank_image').style.opacity = "1";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                       }
                       function docrerank_stop() {
-                        document.getElementById('docrerank_image').style.opacity = "0";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                       }
                       docrerank_stop();
                     </script>
@@ -363,22 +338,22 @@
                 </tr>
 
                 <!-- Example 8: MIA -->
-                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+                <tr class="publication-row">
 
                   <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
                       <!-- Optional hover image layer -->
-                      <div class="two" id="docrerank_image">
-                        <img src="data/MIA.png" width="100%">
+                      <div class="two">
+                        <img src="data/MIA.png" width="100%" alt="ImpMIA visual summary">
                       </div>
-                      <img src="data/MIA.png" width="100%">
+                      <img src="data/MIA.png" width="100%" alt="ImpMIA visual summary">
                     </div>
                     <script type="text/javascript">
                       function docrerank_start() {
-                        document.getElementById('docrerank_image').style.opacity = "1";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                       }
                       function docrerank_stop() {
-                        document.getElementById('docrerank_image').style.opacity = "0";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                       }
                       docrerank_stop();
                     </script>
@@ -411,23 +386,22 @@
 
 
                 <!-- Example 1: DocReRank -->
-                <!-- <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()" bgcolor="#ffffd0"> -->
-                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+                <tr class="publication-row">
 
                   <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
                       <!-- Optional hover image layer -->
-                      <div class="two" id="docrerank_image">
-                        <img src="data/docrerank.png" width="100%">
+                      <div class="two">
+                        <img src="data/docrerank.png" width="100%" alt="DocReRank visual summary">
                       </div>
-                      <img src="data/docrerank.png" width="100%">
+                      <img src="data/docrerank.png" width="100%" alt="DocReRank visual summary">
                     </div>
                     <script type="text/javascript">
                       function docrerank_start() {
-                        document.getElementById('docrerank_image').style.opacity = "1";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                       }
                       function docrerank_stop() {
-                        document.getElementById('docrerank_image').style.opacity = "0";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                       }
                       docrerank_stop();
                     </script>
@@ -459,22 +433,22 @@
                 </tr>
 
                 <!-- Example 2: Real-MM-RAG -->
-                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+                <tr class="publication-row">
 
                   <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
                       <!-- Optional hover image layer -->
-                      <div class="two" id="docrerank_image">
-                        <img src="data/Realmmrag.png" width="100%">
+                      <div class="two">
+                        <img src="data/Realmmrag.png" width="100%" alt="REAL-MM-RAG visual summary">
                       </div>
-                      <img src="data/Realmmrag.png" width="100%">
+                      <img src="data/Realmmrag.png" width="100%" alt="REAL-MM-RAG visual summary">
                     </div>
                     <script type="text/javascript">
                       function docrerank_start() {
-                        document.getElementById('docrerank_image').style.opacity = "1";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                       }
                       function docrerank_stop() {
-                        document.getElementById('docrerank_image').style.opacity = "0";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                       }
                       docrerank_stop();
                     </script>
@@ -509,22 +483,22 @@
                 </tr>
 
                 <!-- Example 7: CLIPr -->
-                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+                <tr class="publication-row">
 
                   <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
                       <!-- Optional hover image layer -->
-                      <div class="two" id="docrerank_image">
-                        <img src="data/CLIP.png" width="100%">
+                      <div class="two">
+                        <img src="data/CLIP.png" width="100%" alt="PerceptCLIP visual summary">
                       </div>
-                      <img src="data/CLIP.png" width="100%">
+                      <img src="data/CLIP.png" width="100%" alt="PerceptCLIP visual summary">
                     </div>
                     <script type="text/javascript">
                       function docrerank_start() {
-                        document.getElementById('docrerank_image').style.opacity = "1";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                       }
                       function docrerank_stop() {
-                        document.getElementById('docrerank_image').style.opacity = "0";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                       }
                       docrerank_stop();
                     </script>
@@ -556,22 +530,22 @@
                 </tr>
                 
                 <!-- Example 3: Paint by Inpaint -->
-                <tr onmouseout="docrerank_stop()" onmouseover="docrerank_start()">
+                <tr class="publication-row">
 
                   <td style="padding:10px;width:20%;vertical-align:middle">
                     <div class="one">
                       <!-- Optional hover image layer -->
-                      <div class="two" id="docrerank_image">
-                        <img src="data/PIPE.png" width="100%">
+                      <div class="two">
+                        <img src="data/PIPE.png" width="100%" alt="Paint by Inpaint visual summary">
                       </div>
-                      <img src="data/PIPE.png" width="100%">
+                      <img src="data/PIPE.png" width="100%" alt="Paint by Inpaint visual summary">
                     </div>
                     <script type="text/javascript">
                       function docrerank_start() {
-                        document.getElementById('docrerank_image').style.opacity = "1";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "1"; });
                       }
                       function docrerank_stop() {
-                        document.getElementById('docrerank_image').style.opacity = "0";
+                        document.querySelectorAll('.publication-row .two').forEach(function (layer) { layer.style.opacity = "0"; });
                       }
                       docrerank_stop();
                     </script>
@@ -618,5 +592,13 @@
         </tr>
       </tbody>
     </table>
+    <script>
+      document.querySelectorAll('.publication-row').forEach(function (row) {
+        var layer = row.querySelector('.two');
+        if (!layer) return;
+        row.addEventListener('mouseenter', function () { layer.style.opacity = '1'; });
+        row.addEventListener('mouseleave', function () { layer.style.opacity = '0'; });
+      });
+    </script>
   </body>
 </html>
